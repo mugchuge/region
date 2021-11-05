@@ -81,7 +81,7 @@ public class RegionCommand implements CommandExecutor {
                         if (regions.hasRegion(name)) {
                             Player player = Bukkit.getPlayer(args[2]);
                             regions.giveOwnerInRegion(name, player);
-                            p.sendMessage("[" + player + "]" + " 에게 " + "[" + name + "]" + "구역의 매니저 권한을 줬습니다.");
+                            p.sendMessage("[" + player.getName() + "]" + " 에게 " + "[" + name + "]" + "구역의 매니저 권한을 줬습니다.");
                         } else {
                             p.sendMessage("구역을 찾지 못했습니다.");
                         }
